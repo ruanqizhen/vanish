@@ -1,18 +1,18 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={siteConfig.title}
-      description="一部关于“叙事规则如何塑造人的选择”的实验长篇。外卖骑手江临以程序员思维卡BUG拆解玄学命运。">
+      description="规则如何塑造人性的选择？外卖骑手江临以程序员思维卡BUG拆解玄学命运。">
       <header className="vanish-hero">
         <h1 className="vanish-hero-title">消失的终点</h1>
         <p className="vanish-hero-subtitle">
-          一部关于“叙事规则如何塑造人的选择”的实验长篇
+          一部关于“规则如何塑造人性的选择”的长篇巨著
         </p>
         <div className="vanish-awards-badge-row">
           <span className="vanish-award-badge">🥇 2025年度全网“全渠道销售总冠军”</span>
