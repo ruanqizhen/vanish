@@ -397,4 +397,116 @@
   color: var(--ifm-color-emphasis-500);
 }
 
+/* Novel Cover & Hero Layout Updates */
+.vanish-hero-row {
+  align-items: center;
+  text-align: left;
+  width: 100%;
+}
+
+.vanish-hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.vanish-hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.vanish-cover-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+  perspective: 1000px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.vanish-novel-cover {
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3),
+              0 0 30px rgba(139, 92, 246, 0.2);
+  transition: all 0.5s ease;
+  transform: rotateY(-10deg) rotateX(5deg);
+}
+
+.vanish-novel-cover:hover {
+  transform: rotateY(0deg) rotateX(0deg) scale(1.05);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4),
+              0 0 40px rgba(6, 182, 212, 0.4);
+}
+
+.vanish-terminal {
+  margin-top: 1rem !important;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotateY(-5deg);
+  }
+  50% {
+    transform: translateY(-15px) rotateY(5deg);
+  }
+  100% {
+    transform: translateY(0px) rotateY(-5deg);
+  }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 996px) {
+  .vanish-hero-row {
+    text-align: center;
+    flex-direction: column;
+  }
+  .vanish-hero-left {
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .vanish-novel-cover {
+    width: 240px;
+    transform: none;
+  }
+  .vanish-novel-cover:hover {
+    transform: scale(1.05);
+  }
+  .vanish-awards-badge-row, .vanish-tags-container {
+    justify-content: center;
+  }
+}
+
+/* Chapter Illustrations Styling */
+.vanish-illustration-wrapper {
+  margin: 3rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.vanish-illustration-wrapper img {
+  max-width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+  cursor: zoom-in;
+}
+
+.vanish-illustration-wrapper img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 35px rgba(139, 92, 246, 0.25), 0 0 20px rgba(6, 182, 212, 0.15);
+}
+
+[data-theme='light'] .vanish-illustration-wrapper img {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='light'] .vanish-illustration-wrapper img:hover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+
 

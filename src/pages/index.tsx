@@ -10,76 +10,92 @@ export default function Home(): ReactNode {
       title={siteConfig.title}
       description="规则如何塑造人性的选择？外卖骑手江临以程序员思维卡BUG拆解玄学命运。">
       <header className="vanish-hero">
-        <h1 className="vanish-hero-title">消失的终点</h1>
-        <p className="vanish-hero-subtitle">
-          一部关于“规则如何塑造人性的选择”的长篇巨著
-        </p>
-        <div className="vanish-awards-badge-row">
-          <span className="vanish-award-badge">🥇 2025年度全网“全渠道销售总冠军”</span>
-          <span className="vanish-award-badge">🚀 2026年度“年度最佳创新作品”</span>
-          <span className="vanish-award-badge">🌌 华语科幻星云奖“最佳流派融合奖”</span>
-        </div>
-        <Link
-          className="vanish-cta-button"
-          to="/docs/"
-          style={{ marginTop: '1.5rem' }}>
-          启动叙事引擎 · 开始阅读
-        </Link>
+        <div className="container">
+          <div className="row vanish-hero-row">
+            <div className="col col--6 vanish-hero-left">
+              <h1 className="vanish-hero-title">消失的终点</h1>
+              <p className="vanish-hero-subtitle">
+                一部关于“规则如何塑造人性的选择”的长篇巨著
+              </p>
+              <div className="vanish-awards-badge-row">
+                <span className="vanish-award-badge">🥇 2025年度全网“全渠道销售总冠军”</span>
+                <span className="vanish-award-badge">🚀 2026年度“年度最佳创新作品”</span>
+                <span className="vanish-award-badge">🌌 华语科幻星云奖“最佳流派融合奖”</span>
+              </div>
+              <Link
+                className="vanish-cta-button"
+                to="/docs/"
+                style={{ marginTop: '2rem', marginBottom: '1.5rem' }}>
+                启动叙事引擎 · 开始阅读
+              </Link>
 
-        <div className="vanish-tags-container">
-          <span className="vanish-tag">无限流</span>
-          <span className="vanish-tag">规则怪谈</span>
-          <span className="vanish-tag">克苏鲁</span>
-          <span className="vanish-tag">硬科幻</span>
-          <span className="vanish-tag">双男主</span>
-          <span className="vanish-tag">悬疑惊悚</span>
-          <span className="vanish-tag">都市异能</span>
-          <span className="vanish-tag">架空历史官场</span>
-          <span className="vanish-tag">游戏入侵</span>
-          <span className="vanish-tag">甜宠</span>
-        </div>
+              <div className="vanish-tags-container">
+                <span className="vanish-tag">无限流</span>
+                <span className="vanish-tag">规则怪谈</span>
+                <span className="vanish-tag">克苏鲁</span>
+                <span className="vanish-tag">硬科幻</span>
+                <span className="vanish-tag">双男主</span>
+                <span className="vanish-tag">悬疑惊悚</span>
+                <span className="vanish-tag">都市异能</span>
+                <span className="vanish-tag">架空历史官场</span>
+                <span className="vanish-tag">游戏入侵</span>
+                <span className="vanish-tag">甜宠</span>
+              </div>
+            </div>
 
-        <div className="vanish-terminal">
-          <div className="vanish-terminal-header">
-            <div className="vanish-terminal-dot red"></div>
-            <div className="vanish-terminal-dot yellow"></div>
-            <div className="vanish-terminal-dot green"></div>
-            <div className="vanish-terminal-title">Narrative Engine Console</div>
-          </div>
-          <div className="vanish-terminal-body">
-            <div className="vanish-terminal-line">
-              <span className="vanish-terminal-prompt">&gt;</span>
-              <span>sys.init_narrative_engine_core()... </span>
-              <span className="vanish-terminal-success">SUCCESS</span>
-            </div>
-            <div className="vanish-terminal-line">
-              <span className="vanish-terminal-prompt">&gt;</span>
-              <span>loading_universe("Vanish_Main_World") </span>
-              <span className="vanish-terminal-info">[Active]</span>
-            </div>
-            <div className="vanish-terminal-line">
-              <span className="vanish-terminal-prompt">&gt;</span>
-              <span>scan_active_variables()</span>
-            </div>
-            <div className="vanish-terminal-line" style={{ paddingLeft: '15px' }}>
-              <span>- Jiang_Lin (都市外卖骑手 / BugTrigger): </span>
-              <span className="vanish-terminal-success">ONLINE</span>
-            </div>
-            <div className="vanish-terminal-line" style={{ paddingLeft: '15px' }}>
-              <span>- Shen_Ce (冷酷执行官 / NarrativeAnchor): </span>
-              <span className="vanish-terminal-info">BOUNDED</span>
-            </div>
-            <div className="vanish-terminal-line">
-              <span className="vanish-terminal-prompt">&gt;</span>
-              <span className="vanish-terminal-warning">[WARN] Alert: Rule hot-update in progress. Spacetime format altered.</span>
-            </div>
-            <div className="vanish-terminal-line">
-              <span className="vanish-terminal-prompt">&gt;</span>
-              <span className="vanish-terminal-warning">[WARN] Detected abnormal 13th Mansion delivery order.</span>
-            </div>
-            <div className="vanish-terminal-line">
-              <span className="vanish-terminal-prompt">&gt;</span>
-              <span className="vanish-terminal-info">[QUEST] Break the rules, override the typewriter, rewrite the end.</span>
+            <div className="col col--6 vanish-hero-right">
+              <div className="vanish-cover-wrapper">
+                <img
+                  src="/img/novel_cover.png"
+                  className="vanish-novel-cover"
+                  alt="《消失的终点》图书封面"
+                />
+              </div>
+
+              <div className="vanish-terminal">
+                <div className="vanish-terminal-header">
+                  <div className="vanish-terminal-dot red"></div>
+                  <div className="vanish-terminal-dot yellow"></div>
+                  <div className="vanish-terminal-dot green"></div>
+                  <div className="vanish-terminal-title">Narrative Engine Console</div>
+                </div>
+                <div className="vanish-terminal-body">
+                  <div className="vanish-terminal-line">
+                    <span className="vanish-terminal-prompt">&gt;</span>
+                    <span>sys.init_narrative_engine_core()... </span>
+                    <span className="vanish-terminal-success">SUCCESS</span>
+                  </div>
+                  <div className="vanish-terminal-line">
+                    <span className="vanish-terminal-prompt">&gt;</span>
+                    <span>loading_universe("Vanish_Main_World") </span>
+                    <span className="vanish-terminal-info">[Active]</span>
+                  </div>
+                  <div className="vanish-terminal-line">
+                    <span className="vanish-terminal-prompt">&gt;</span>
+                    <span>scan_active_variables()</span>
+                  </div>
+                  <div className="vanish-terminal-line" style={{ paddingLeft: '15px' }}>
+                    <span>- Jiang_Lin (都市外卖骑手 / BugTrigger): </span>
+                    <span className="vanish-terminal-success">ONLINE</span>
+                  </div>
+                  <div className="vanish-terminal-line" style={{ paddingLeft: '15px' }}>
+                    <span>- Shen_Ce (冷酷执行官 / NarrativeAnchor): </span>
+                    <span className="vanish-terminal-info">BOUNDED</span>
+                  </div>
+                  <div className="vanish-terminal-line">
+                    <span className="vanish-terminal-prompt">&gt;</span>
+                    <span className="vanish-terminal-warning">[WARN] Alert: Rule hot-update in progress. Spacetime format altered.</span>
+                  </div>
+                  <div className="vanish-terminal-line">
+                    <span className="vanish-terminal-prompt">&gt;</span>
+                    <span className="vanish-terminal-warning">[WARN] Detected abnormal 13th Mansion delivery order.</span>
+                  </div>
+                  <div className="vanish-terminal-line">
+                    <span className="vanish-terminal-prompt">&gt;</span>
+                    <span className="vanish-terminal-info">[QUEST] Break the rules, override the typewriter, rewrite the end.</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,9 @@
 # 《消失的终点》
 
+<p align="center">
+  <img src="/img/novel_cover.png" width="400" alt="《消失的终点》图书封面" style={{borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.15)'}} />
+</p>
+
 > 暴雨深夜，一份不存在的派单。  
 > 程序员外卖员江临，踏入了地图上不存在的13号公馆。  
 > 从那一刻起，他不再只是送外卖的人——  
