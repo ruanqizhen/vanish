@@ -1,0 +1,400 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #8b5cf6;
+  --ifm-color-primary-dark: #7c3aed;
+  --ifm-color-primary-darker: #6d28d9;
+  --ifm-color-primary-darkest: #5b21b6;
+  --ifm-color-primary-light: #a78bfa;
+  --ifm-color-primary-lighter: #c4b5fd;
+  --ifm-color-primary-lightest: #ddd6fe;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #a78bfa;
+  --ifm-color-primary-dark: #8b5cf6;
+  --ifm-color-primary-darker: #7c3aed;
+  --ifm-color-primary-darkest: #6d28d9;
+  --ifm-color-primary-light: #c4b5fd;
+  --ifm-color-primary-lighter: #ddd6fe;
+  --ifm-color-primary-lightest: #ede9fe;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Premium custom styling for homepage */
+.vanish-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 8rem 2rem;
+  background: radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 20% 80%, rgba(6, 182, 212, 0.15) 0%, transparent 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60vh;
+}
+
+[data-theme='dark'] .vanish-hero {
+  background: radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.25) 0%, transparent 50%),
+              radial-gradient(circle at 20% 80%, rgba(6, 182, 212, 0.2) 0%, transparent 50%),
+              #0B0F19;
+}
+
+.vanish-hero-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  background: linear-gradient(135deg, #a78bfa 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  animation: fadeInDown 1s ease;
+}
+
+.vanish-hero-subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.1em;
+  animation: fadeInUp 1s ease 0.2s both;
+}
+
+.vanish-cta-button {
+  background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+  color: white !important;
+  border: none;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 0.85rem 2.5rem;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  animation: fadeInUp 1s ease 0.4s both;
+}
+
+.vanish-cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px -5px rgba(139, 92, 246, 0.6), 0 0 15px rgba(6, 182, 212, 0.3);
+}
+
+.vanish-features-section {
+  padding: 5rem 2rem;
+}
+
+.vanish-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2.5rem;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme='light'] .vanish-card {
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.vanish-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(139, 92, 246, 0.3);
+  box-shadow: 0 20px 40px -15px rgba(0,0,0,0.3);
+}
+
+.vanish-card-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.5rem;
+  color: #8b5cf6;
+}
+
+.vanish-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.vanish-card-description {
+  color: var(--ifm-color-emphasis-600);
+  line-height: 1.6;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Terminal emulator style for homepage */
+.vanish-terminal {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 650px;
+  animation: fadeInUp 1s ease 0.6s both;
+}
+
+.vanish-terminal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #21262d;
+  padding-bottom: 0.5rem;
+}
+
+.vanish-terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.vanish-terminal-dot.red { background: #ff5f56; }
+.vanish-terminal-dot.yellow { background: #ffbd2e; }
+.vanish-terminal-dot.green { background: #27c93f; }
+
+.vanish-terminal-title {
+  color: #8b949e;
+  font-size: 0.8rem;
+  margin-left: auto;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.vanish-terminal-body {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #c9d1d9;
+}
+
+.vanish-terminal-line {
+  margin-bottom: 0.4rem;
+}
+
+.vanish-terminal-prompt {
+  color: #58a6ff;
+  margin-right: 8px;
+}
+
+.vanish-terminal-success {
+  color: #56d364;
+}
+
+.vanish-terminal-warning {
+  color: #e3b341;
+}
+
+.vanish-terminal-info {
+  color: #bc8cff;
+}
+
+/* Tag styles */
+.vanish-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 2rem;
+  max-width: 800px;
+  animation: fadeInUp 1s ease 0.3s both;
+}
+
+.vanish-tag {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  color: #a78bfa;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+[data-theme='light'] .vanish-tag {
+  background: rgba(139, 92, 246, 0.05);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  color: #7c3aed;
+}
+
+.vanish-tag:hover {
+  transform: scale(1.05);
+  background: rgba(139, 92, 246, 0.2);
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
+}
+
+/* Homepage Awards Badge Row */
+.vanish-awards-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  max-width: 900px;
+  animation: fadeInUp 1s ease 0.25s both;
+}
+
+.vanish-award-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #f59e0b; /* Golden tone */
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.03);
+  transition: all 0.3s ease;
+}
+
+[data-theme='light'] .vanish-award-badge {
+  background: rgba(217, 119, 6, 0.06);
+  border: 1px solid rgba(217, 119, 6, 0.18);
+  color: #d97706;
+}
+
+.vanish-award-badge:hover {
+  transform: scale(1.03);
+  background: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.12);
+}
+
+/* Reviews Section */
+.vanish-reviews-section {
+  padding: 6rem 2rem;
+  position: relative;
+  background: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.03) 0%, transparent 60%);
+}
+
+.vanish-reviews-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #a78bfa 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vanish-review-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 2.2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme='light'] .vanish-review-card {
+  background: rgba(0, 0, 0, 0.015);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.vanish-review-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(139, 92, 246, 0.25);
+  box-shadow: 0 20px 40px -15px rgba(139, 92, 246, 0.15);
+}
+
+.vanish-review-quote {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-900);
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.vanish-review-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 1.8rem;
+  flex-grow: 1;
+}
+
+.vanish-review-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 1rem;
+}
+
+[data-theme='light'] .vanish-review-author {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.vanish-review-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.vanish-review-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.vanish-review-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.vanish-review-title-desc {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-500);
+}
+
+
