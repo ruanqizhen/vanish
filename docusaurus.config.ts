@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://vanish.qizhen.xyz',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ruanqizhen', // Usually your GitHub org/user name.
+  projectName: 'vanish', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ruanqizhen/vanish/tree/main/',
         },
         blog: false,
         theme: {
@@ -74,7 +74,7 @@ const config: Config = {
           label: '开始阅读',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/ruanqizhen/vanish',
           label: 'GitHub',
           position: 'right',
         },
