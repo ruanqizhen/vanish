@@ -57,7 +57,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '第五幕：消失的终点',
+      label: '第五幕：消失的地平线',
       collapsed: false,
       items: [
         'ch25',
