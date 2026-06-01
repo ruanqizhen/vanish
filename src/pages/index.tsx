@@ -8,12 +8,12 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={siteConfig.title}
-      description="规则如何塑造人性的选择？外卖骑手江临以程序员思维卡BUG拆解玄学命运。">
+      description="规则如何塑造人性的选择？外卖骑手肖山以程序员思维卡BUG拆解玄学命运。">
       <header className="vanish-hero">
         <div className="container">
           <div className="row vanish-hero-row">
             <div className="col col--6 vanish-hero-left">
-              <h1 className="vanish-hero-title">消失的终点</h1>
+              <h1 className="vanish-hero-title">消散的终点</h1>
               <p className="vanish-hero-subtitle">
                 一部关于“规则如何塑造人性的选择”的长篇巨著
               </p>
@@ -48,7 +48,7 @@ export default function Home(): ReactNode {
                 <img
                   src="/img/novel_cover.png"
                   className="vanish-novel-cover"
-                  alt="《消失的终点》图书封面"
+                  alt="《消散的终点》图书封面"
                 />
               </div>
 
@@ -134,7 +134,7 @@ export default function Home(): ReactNode {
                   </svg>
                 </div>
                 <h3 className="vanish-card-title">外卖骑手的“卡BUG”改命</h3>
-                <p className="vanish-card-description">程序员外卖员江临，用严密的系统化逻辑去硬核拆解未知的克苏鲁玄学与高维战争，从被命运玩弄的棋子蜕变成重写剧本的作者。</p>
+                <p className="vanish-card-description">程序员外卖员肖山，用严密的系统化逻辑去硬核拆解未知的克苏鲁玄学与高维战争，从被命运玩弄的棋子蜕变成重写剧本的作者。</p>
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@ export default function Home(): ReactNode {
                 <div>
                   <div className="vanish-review-quote">“它在荒诞的数字泡沫里，写出了最冷酷的高维诗意。”</div>
                   <p className="vanish-review-text">
-                    主角江临跨着滋滋冒代码的电动车，载着沈策冲向“终点塔”那一幕，具有一种近乎残酷的宏大美感。这不仅是科幻，更是用计算机逻辑对现实命运进行的一次高能重构。
+                    主角肖山跨着滋滋冒代码的电动车，载着沈策冲向“终点塔”那一幕，具有一种近乎残酷的宏大美感。这不仅是科幻，更是用计算机逻辑对现实命运进行的一次高能重构。
                   </p>
                 </div>
                 <div className="vanish-review-author">
@@ -168,7 +168,7 @@ export default function Home(): ReactNode {
                 <div>
                   <div className="vanish-review-quote">“这是当代底层工具人对命运进行的最激烈的、带有黑色幽默的反抗。”</div>
                   <p className="vanish-review-text">
-                    在现实中，骑手被困在平台的算法系统里；而在小说里，这种困境被推向了高维机制的极致——“超时即抹杀”。江临没有选择砸碎机器，而是选择成为最了解机器的人。这是一份中文互联网对“算法时代”交出的一份魔幻现实主义答卷。
+                    在现实中，骑手被困在平台的算法系统里；而在小说里，这种困境被推向了高维机制的极致——“超时即抹杀”。肖山没有选择砸碎机器，而是选择成为最了解机器的人。这是一份中文互联网对“算法时代”交出的一份魔幻现实主义答卷。
                   </p>
                 </div>
                 <div className="vanish-review-author">
