@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: '消失的终点',
+  title: '消散的终点',
   tagline: '一部关于“叙事规则如何塑造人的选择”的实验长篇',
   favicon: 'img/logo.svg',
 
@@ -72,9 +72,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: '消失的终点',
+      title: '消散的终点',
       logo: {
-        alt: '消失的终点 Logo',
+        alt: '消散的终点 Logo',
         src: 'img/logo.svg',
       },
       items: [
