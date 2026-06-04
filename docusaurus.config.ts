@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ruanqizhen/vanish/tree/main/',
+            'https://github.com/ruanqizhen/vanish/edit/main/',
         },
         blog: false,
         theme: {
