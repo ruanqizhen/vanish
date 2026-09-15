@@ -75,7 +75,7 @@ export default function Home(): ReactNode {
                     <span>scan_active_variables()</span>
                   </div>
                   <div className="vanish-terminal-line" style={{ paddingLeft: '15px' }}>
-                    <span>- Jiang_Lin (都市外卖骑手 / BugTrigger): </span>
+                    <span>- Xiao_Shan (都市外卖骑手 / BugTrigger): </span>
                     <span className="vanish-terminal-success">ONLINE</span>
                   </div>
                   <div className="vanish-terminal-line" style={{ paddingLeft: '15px' }}>
